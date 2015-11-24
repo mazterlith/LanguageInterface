@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageInterface", "LanguageInterface\LanguageInterface.csproj", "{C028CC5C-F6EC-4AA3-90CF-EA361A4F9214}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicLanguageLibrary", "DynamicLanguageLibrary\DynamicLanguageLibrary.csproj", "{F7DE0AC8-804C-4743-A696-ECBDA225BD7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4E30EEE1-8503-4269-9F44-705A4A437DFC}"
+	ProjectSection(SolutionItems) = preProject
+		LanguageInterface\bin\Debug\InternationalPhoneticAlphabet.xml = LanguageInterface\bin\Debug\InternationalPhoneticAlphabet.xml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C028CC5C-F6EC-4AA3-90CF-EA361A4F9214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C028CC5C-F6EC-4AA3-90CF-EA361A4F9214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C028CC5C-F6EC-4AA3-90CF-EA361A4F9214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C028CC5C-F6EC-4AA3-90CF-EA361A4F9214}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7DE0AC8-804C-4743-A696-ECBDA225BD7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7DE0AC8-804C-4743-A696-ECBDA225BD7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7DE0AC8-804C-4743-A696-ECBDA225BD7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7DE0AC8-804C-4743-A696-ECBDA225BD7D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,873 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Source: https://en.wikipedia.org/wiki/International_Phonetic_Alphabet-->
+<PhoneticAlphabet Name="IPA">
+  <Consonants>
+    <ConsonantPhoneme Representation="m̥" Pronounciation="m in prisme, French">
+      <PlacesOfArticulation>Bilabial</PlacesOfArticulation>
+      <MannersOfArticulation>Nasal</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="m" Pronounciation="m in map, English">
+      <PlacesOfArticulation>Bilabial</PlacesOfArticulation>
+      <MannersOfArticulation>Nasal</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɱ" Pronounciation="m in symphony, English">
+      <PlacesOfArticulation>Labiodental</PlacesOfArticulation>
+      <MannersOfArticulation>Nasal</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="n̼̊" Pronounciation="unknown">
+      <PlacesOfArticulation>Linguolabial</PlacesOfArticulation>
+      <MannersOfArticulation>Nasal</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="n̼" Pronounciation="m̼ in m̼isi, Araki">
+      <PlacesOfArticulation>Linguolabial</PlacesOfArticulation>
+      <MannersOfArticulation>Nasal</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="n̥" Pronounciation="n in lasn, Estonian">
+      <PlacesOfArticulation>Dental, Alveolar, Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>Nasal</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="n" Pronounciation="n in month, English">
+      <PlacesOfArticulation>Dental, Alveolar, Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>Nasal</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɳ̊" Pronounciation="unknown">
+      <PlacesOfArticulation>Retroflex</PlacesOfArticulation>
+      <MannersOfArticulation>Nasal</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɳ" Pronounciation="rn in garn, Norwegian">
+      <PlacesOfArticulation>Retroflex</PlacesOfArticulation>
+      <MannersOfArticulation>Nasal</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɲ̊" Pronounciation="n in onki, Faroese">
+      <PlacesOfArticulation>Alveolopalatal, Palatal</PlacesOfArticulation>
+      <MannersOfArticulation>Nasal</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɲ" Pronounciation="gn in agneau, French">
+      <PlacesOfArticulation>Alveolopalatal, Palatal</PlacesOfArticulation>
+      <MannersOfArticulation>Nasal</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ŋ̊" Pronounciation="n in onkur, Faroese">
+      <PlacesOfArticulation>Velar</PlacesOfArticulation>
+      <MannersOfArticulation>Nasal</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ŋ" Pronounciation="ng in sing, English">
+      <PlacesOfArticulation>Velar</PlacesOfArticulation>
+      <MannersOfArticulation>Nasal</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɴ̥" Pronounciation="unknown">
+      <PlacesOfArticulation>Uvular</PlacesOfArticulation>
+      <MannersOfArticulation>Nasal</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɴ" Pronounciation="n in enjuto, Spanish">
+      <PlacesOfArticulation>Uvular</PlacesOfArticulation>
+      <MannersOfArticulation>Nasal</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="p" Pronounciation="p in push, English">
+      <PlacesOfArticulation>Bilabial</PlacesOfArticulation>
+      <MannersOfArticulation>Stop</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="b" Pronounciation="b in aback, English">
+      <PlacesOfArticulation>Bilabial</PlacesOfArticulation>
+      <MannersOfArticulation>Stop</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="p̪" Pronounciation="π in σάπφειρος, Greek">
+      <PlacesOfArticulation>Labiodental</PlacesOfArticulation>
+      <MannersOfArticulation>Stop</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="b̪" Pronounciation="unknown">
+      <PlacesOfArticulation>Labiodental</PlacesOfArticulation>
+      <MannersOfArticulation>Stop</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="t̼" Pronounciation="unknown">
+      <PlacesOfArticulation>Linguolabial</PlacesOfArticulation>
+      <MannersOfArticulation>Stop</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="d̼" Pronounciation="unknown">
+      <PlacesOfArticulation>Linguolabial</PlacesOfArticulation>
+      <MannersOfArticulation>Stop</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="t" Pronounciation="th in thin, English">
+      <PlacesOfArticulation>Dental, Alveolar, Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>Stop</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="d" Pronounciation="th in then, English">
+      <PlacesOfArticulation>Dental, Alveolar, Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>Stop</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʈ" Pronounciation="t in kort, Norwegian">
+      <PlacesOfArticulation>Retroflex</PlacesOfArticulation>
+      <MannersOfArticulation>Stop</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɖ" Pronounciation="rd in varde, Norwegian">
+      <PlacesOfArticulation>Retroflex</PlacesOfArticulation>
+      <MannersOfArticulation>Stop</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="c" Pronounciation="k in keen, English">
+      <PlacesOfArticulation>Alveolopalatal, Palatal</PlacesOfArticulation>
+      <MannersOfArticulation>Stop</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɟ" Pronounciation="g in gui, French">
+      <PlacesOfArticulation>Alveolopalatal, Palatal</PlacesOfArticulation>
+      <MannersOfArticulation>Stop</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="k" Pronounciation="k in kiss, English">
+      <PlacesOfArticulation>Velar</PlacesOfArticulation>
+      <MannersOfArticulation>Stop</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="g" Pronounciation="g in gaggle, English">
+      <PlacesOfArticulation>Velar</PlacesOfArticulation>
+      <MannersOfArticulation>Stop</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="q" Pronounciation="c in cut, English">
+      <PlacesOfArticulation>Uvular</PlacesOfArticulation>
+      <MannersOfArticulation>Stop</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɢ" Pronounciation="q in Muqdisho, Somali">
+      <PlacesOfArticulation>Uvular</PlacesOfArticulation>
+      <MannersOfArticulation>Stop</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʡ" Pronounciation="g̱ in g̱antl, Haida">
+      <PlacesOfArticulation>Pharyngeal</PlacesOfArticulation>
+      <MannersOfArticulation>Stop</MannersOfArticulation>
+      <Voiced>Ambiguous</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʔ" Pronounciation="pause in uh-oh, English">
+      <PlacesOfArticulation>Glottal</PlacesOfArticulation>
+      <MannersOfArticulation>Stop</MannersOfArticulation>
+      <Voiced>Ambiguous</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="t͡s" Pronounciation="ts in tsunami, Japanese">
+      <PlacesOfArticulation>Dental, Alveolar</PlacesOfArticulation>
+      <MannersOfArticulation>SibilantAffricate</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="d͡z" Pronounciation="dz in tsudzuku, Japanese">
+      <PlacesOfArticulation>Dental, Alveolar</PlacesOfArticulation>
+      <MannersOfArticulation>SibilantAffricate</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="t͡ʃ" Pronounciation="ch in bleach, English">
+      <PlacesOfArticulation>Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>SibilantAffricate</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="d͡ʒ" Pronounciation="j in jump, English">
+      <PlacesOfArticulation>Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>SibilantAffricate</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʈ͡ʂ" Pronounciation="zh in Zhōngwén, Mandarin Chinese">
+      <PlacesOfArticulation>Retroflex</PlacesOfArticulation>
+      <MannersOfArticulation>SibilantAffricate</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɖ͡ʐ" Pronounciation="dż in dżem, Standard Polish">
+      <PlacesOfArticulation>Retroflex</PlacesOfArticulation>
+      <MannersOfArticulation>SibilantAffricate</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="t͡ɕ" Pronounciation="tj in tjern, Norwegian">
+      <PlacesOfArticulation>Alveolopalatal</PlacesOfArticulation>
+      <MannersOfArticulation>SibilantAffricate</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="d͡ʑ" Pronounciation="dź in dźwięk, Polish">
+      <PlacesOfArticulation>Alveolopalatal</PlacesOfArticulation>
+      <MannersOfArticulation>SibilantAffricate</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="pɸ" Pronounciation="p in up, Scouse English">
+      <PlacesOfArticulation>Bilabial</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantAffricate</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="bβ" Pronounciation="b in rub, Scouse English">
+      <PlacesOfArticulation>Bilabial</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantAffricate</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="p̪f" Pronounciation="pf in Pfirsiche, Standard German">
+      <PlacesOfArticulation>Labiodental</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantAffricate</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="b̪v" Pronounciation="v in vèès, Orsmaal-Gussenhoven Dutch">
+      <PlacesOfArticulation>Labiodental</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantAffricate</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="t͡θ" Pronounciation="th in think, Dubliner English">
+      <PlacesOfArticulation>Dental</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantAffricate</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="d͡ð" Pronounciation="th in they, Dubliner English">
+      <PlacesOfArticulation>Dental</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantAffricate</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="t͡s" Pronounciation="c in co, Polish">
+      <PlacesOfArticulation>Alveolar</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantAffricate</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="d͡z" Pronounciation="dz in bodza, Hungarian">
+      <PlacesOfArticulation>Alveolar</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantAffricate</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="t̠ɹ̠̊˔" Pronounciation="tr in tree, General American English">
+      <PlacesOfArticulation>Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantAffricate</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="dʒ" Pronounciation="dsch in dschungel, Standard German">
+      <PlacesOfArticulation>Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantAffricate</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="c͡ç" Pronounciation="ty in tyúk, Hungarian">
+      <PlacesOfArticulation>Alveolopalatal, Palatal</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantAffricate</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɟ͡ʝ" Pronounciation="gy in gyár, Hungarian">
+      <PlacesOfArticulation>Alveolopalatal, Palatal</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantAffricate</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="kx" Pronounciation="c in cab, Scouse English">
+      <PlacesOfArticulation>Velar</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantAffricate</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɡɣ" Pronounciation="g in good, Scouse English">
+      <PlacesOfArticulation>Velar</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantAffricate</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="q͡χ" Pronounciation="кхъ in кхъэ, Kabardian">
+      <PlacesOfArticulation>Uvular</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantAffricate</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʡħ" Pronounciation="unknown">
+      <PlacesOfArticulation>Pharyngeal</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantAffricate</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʡʕ" Pronounciation="unknown">
+      <PlacesOfArticulation>Pharyngeal</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantAffricate</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʔh" Pronounciation="h in hat, Received Pronunciation English">
+      <PlacesOfArticulation>Glottal</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantAffricate</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="s" Pronounciation="s in sand, English">
+      <PlacesOfArticulation>Dental, Alveolar</PlacesOfArticulation>
+      <MannersOfArticulation>SibilantFricative</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="z" Pronounciation="z in size, English">
+      <PlacesOfArticulation>Dental, Alveolar</PlacesOfArticulation>
+      <MannersOfArticulation>SibilantFricative</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʃ" Pronounciation="sh in sheep, English">
+      <PlacesOfArticulation>Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>SibilantFricative</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʒ" Pronounciation="si in vision, English">
+      <PlacesOfArticulation>Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>SibilantFricative</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʂ" Pronounciation="rs in forsamling, Norwegian">
+      <PlacesOfArticulation>Retroflex</PlacesOfArticulation>
+      <MannersOfArticulation>SibilantFricative</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʐ" Pronounciation="ж in кожа, Russian">
+      <PlacesOfArticulation>Retroflex</PlacesOfArticulation>
+      <MannersOfArticulation>SibilantFricative</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɕ" Pronounciation="sj in sjel, Norwegian">
+      <PlacesOfArticulation>Alveolopalatal</PlacesOfArticulation>
+      <MannersOfArticulation>SibilantFricative</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʑ" Pronounciation="g in magia, Brazillian Portugese">
+      <PlacesOfArticulation>Alveolopalatal</PlacesOfArticulation>
+      <MannersOfArticulation>SibilantFricative</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɸ" Pronounciation="f in kopf, German">
+      <PlacesOfArticulation>Bilabial</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantFricative</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="β" Pronounciation="b in alaba, Basque">
+      <PlacesOfArticulation>Bilabial</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantFricative, Approximant</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="f" Pronounciation="f in fill, English">
+      <PlacesOfArticulation>Labiodental</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantFricative</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="v" Pronounciation="v in valve, English">
+      <PlacesOfArticulation>Labiodental</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantFricative</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="θ̼" Pronounciation="unknown">
+      <PlacesOfArticulation>Linguolabial</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantFricative</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ð̼" Pronounciation="unknown">
+      <PlacesOfArticulation>Linguolabial</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantFricative, Approximant</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="θ" Pronounciation="th in thin, English">
+      <PlacesOfArticulation>Dental</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantFricative</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ð" Pronounciation="th in this, English">
+      <PlacesOfArticulation>Dental</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantFricative</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɹ̠̊˔" Pronounciation="r in crew, Recieved Pronounciation English">
+      <PlacesOfArticulation>Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantFricative</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʒ" Pronounciation="si in vision, English">
+      <PlacesOfArticulation>Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantFricative</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ç" Pronounciation="ch in nicht, German">
+      <PlacesOfArticulation>Alveolopalatal, Palatal</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantFricative</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʝ" Pronounciation="g in gi, Standard Eastern Norwegian">
+      <PlacesOfArticulation>Alveolopalatal, Palatal</PlacesOfArticulation>
+      <MannersOfArticulation>NonSibilantFricative</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɸ˕" Pronounciation="b in web, Standard European Spanish">
+      <PlacesOfArticulation>Bilabial</PlacesOfArticulation>
+      <MannersOfArticulation>Approximant</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʋ" Pronounciation="v in vauva, Finnish">
+      <PlacesOfArticulation>Labiodental</PlacesOfArticulation>
+      <MannersOfArticulation>Approximant</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="θ̞" Pronounciation="d in sed, Standard European Spanish">
+      <PlacesOfArticulation>Dental</PlacesOfArticulation>
+      <MannersOfArticulation>Approximant</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɹ̥" Pronounciation="r on okkurt, Faroese">
+      <PlacesOfArticulation>Alveolar, Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>Approximant</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɹ" Pronounciation="r in red, most American English">
+      <PlacesOfArticulation>Alveolar, Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>Approximant</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɻ̊" Pronounciation="r in bert, Faroese">
+      <PlacesOfArticulation>Retroflex</PlacesOfArticulation>
+      <MannersOfArticulation>Approximant</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɻ" Pronounciation="r in rúka, Mapuche">
+      <PlacesOfArticulation>Retroflex</PlacesOfArticulation>
+      <MannersOfArticulation>Approximant</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="j̊" Pronounciation="unknown">
+      <PlacesOfArticulation>Alveolopalatal, Palatal</PlacesOfArticulation>
+      <MannersOfArticulation>Approximant</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="j" Pronounciation="y in you, English">
+      <PlacesOfArticulation>Alveolopalatal, Palatal</PlacesOfArticulation>
+      <MannersOfArticulation>Approximant</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɰ̊" Pronounciation="g in Predrag, Standard European Spanish">
+      <PlacesOfArticulation>Velar</PlacesOfArticulation>
+      <MannersOfArticulation>Approximant</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɰ" Pronounciation="g pagar, Spanish">
+      <PlacesOfArticulation>Velar</PlacesOfArticulation>
+      <MannersOfArticulation>Approximant</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ⱳ" Pronounciation="vw in vwa, Mono">
+      <PlacesOfArticulation>Bilabial</PlacesOfArticulation>
+      <MannersOfArticulation>Flap</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ⱱ" Pronounciation="unknown">
+      <PlacesOfArticulation>Labiodental</PlacesOfArticulation>
+      <MannersOfArticulation>Flap</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɾ̼" Pronounciation="unknown">
+      <PlacesOfArticulation>Linguolabial</PlacesOfArticulation>
+      <MannersOfArticulation>Flap</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɾ̥" Pronounciation="hr in hrafn, Icelandic">
+      <PlacesOfArticulation>Dental, Alveolar, Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>Flap</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɾ" Pronounciation="r in three, Scottish English">
+      <PlacesOfArticulation>Dental, Alveolar, Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>Flap</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɽ̊" Pronounciation="unknown">
+      <PlacesOfArticulation>Retroflex</PlacesOfArticulation>
+      <MannersOfArticulation>Flap</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɽ" Pronounciation="rd in bord, Eastern and Central Norwegian">
+      <PlacesOfArticulation>Retroflex</PlacesOfArticulation>
+      <MannersOfArticulation>Flap</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɢ̆" Pronounciation="r in erhe, Standard German">
+      <PlacesOfArticulation>Uvular</PlacesOfArticulation>
+      <MannersOfArticulation>Flap</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʡ̮" Pronounciation="unknown">
+      <PlacesOfArticulation>Pharyngeal</PlacesOfArticulation>
+      <MannersOfArticulation>Flap</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʙ" Pronounciation="mb in simbi, Nias">
+      <PlacesOfArticulation>Bilabial</PlacesOfArticulation>
+      <MannersOfArticulation>Trill</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="r̼" Pronounciation="blowing a raspberry">
+      <PlacesOfArticulation>Linguolabial</PlacesOfArticulation>
+      <MannersOfArticulation>Trill</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="r̥" Pronounciation="r in krtań, Polish">
+      <PlacesOfArticulation>Dental, Alveolar, Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>Trill</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="r" Pronounciation="rr in perro, Spanish">
+      <PlacesOfArticulation>Dental, Alveolar, Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>Trill</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɽ͡r̥" Pronounciation="unknown">
+      <PlacesOfArticulation>Retroflex</PlacesOfArticulation>
+      <MannersOfArticulation>Trill</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɽ͡r" Pronounciation="r in riem, North Holland Dutch">
+      <PlacesOfArticulation>Retroflex</PlacesOfArticulation>
+      <MannersOfArticulation>Trill</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʀ̥" Pronounciation="r in triste, Belgian French">
+      <PlacesOfArticulation>Uvular</PlacesOfArticulation>
+      <MannersOfArticulation>Trill</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʀ" Pronounciation="r in räv, Southern Swedish">
+      <PlacesOfArticulation>Uvular</PlacesOfArticulation>
+      <MannersOfArticulation>Trill</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʜ" Pronounciation="x̱ in x̱ants, Haida">
+      <PlacesOfArticulation>Pharyngeal</PlacesOfArticulation>
+      <MannersOfArticulation>Trill</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʢ" Pronounciation="unknown">
+      <PlacesOfArticulation>Pharyngeal</PlacesOfArticulation>
+      <MannersOfArticulation>Trill</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="t͡ɬ" Pronounciation="tl in tla'únhl, Haida">
+      <PlacesOfArticulation>Dental, Alveolar, Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>LateralAffricative</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="d͡ɮ" Pronounciation="unknown">
+      <PlacesOfArticulation>Dental, Alveolar, Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>LateralAffricative</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʈɭ̊˔" Pronounciation="unknown">
+      <PlacesOfArticulation>Retroflex</PlacesOfArticulation>
+      <MannersOfArticulation>LateralAffricative</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="c͡ʎ̥˔" Pronounciation="tl in tlakate, Hazda">
+      <PlacesOfArticulation>Alveolopalatal, Palatal</PlacesOfArticulation>
+      <MannersOfArticulation>LateralAffricative</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="k͡ʟ̝̊" Pronounciation="unknown">
+      <PlacesOfArticulation>Velar</PlacesOfArticulation>
+      <MannersOfArticulation>LateralAffricative</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɡ͡ʟ̝" Pronounciation="unknown">
+      <PlacesOfArticulation>Velar</PlacesOfArticulation>
+      <MannersOfArticulation>LateralAffricative</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɬ" Pronounciation="ll in llall, Welsh">
+      <PlacesOfArticulation>Dental, Alveolar, Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>LateralFricative</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɮ" Pronounciation="dl in indlala, Zulu">
+      <PlacesOfArticulation>Dental, Alveolar, Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>LateralFricative</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɭ̊˔" Pronounciation="unknown">
+      <PlacesOfArticulation>Retroflex</PlacesOfArticulation>
+      <MannersOfArticulation>LateralFricative</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʎ̥˔" Pronounciation="unknown">
+      <PlacesOfArticulation>Alveolopalatal, Palatal</PlacesOfArticulation>
+      <MannersOfArticulation>LateralFricative</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʎ̝" Pronounciation="unknown">
+      <PlacesOfArticulation>Alveolopalatal, Palatal</PlacesOfArticulation>
+      <MannersOfArticulation>LateralFricative</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʟ̝̊" Pronounciation="unknown">
+      <PlacesOfArticulation>Velar</PlacesOfArticulation>
+      <MannersOfArticulation>LateralFricative</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʟ̝" Pronounciation="unknown">
+      <PlacesOfArticulation>Velar</PlacesOfArticulation>
+      <MannersOfArticulation>LateralFricative</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="l̼" Pronounciation="unknown">
+      <PlacesOfArticulation>Linguolabial</PlacesOfArticulation>
+      <MannersOfArticulation>LateralApproximate</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="l̥" Pronounciation="l in yol, Turkish">
+      <PlacesOfArticulation>Dental, Alveolar, Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>LateralApproximate</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="l" Pronounciation="l in elem, Hungarian">
+      <PlacesOfArticulation>Dental, Alveolar, Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>LateralApproximate</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɭ̊" Pronounciation="unknown">
+      <PlacesOfArticulation>Retroflex</PlacesOfArticulation>
+      <MannersOfArticulation>LateralApproximate</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɭ" Pronounciation="rl in sorl, Swedish">
+      <PlacesOfArticulation>Retroflex</PlacesOfArticulation>
+      <MannersOfArticulation>LateralApproximate</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʎ̥" Pronounciation="l in alt, Faroese">
+      <PlacesOfArticulation>Alveolopalatal, Palatal</PlacesOfArticulation>
+      <MannersOfArticulation>LateralApproximate</MannersOfArticulation>
+      <Voiced>False</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʎ" Pronounciation="lli in million, General American English">
+      <PlacesOfArticulation>Alveolopalatal, Palatal</PlacesOfArticulation>
+      <MannersOfArticulation>LateralApproximate</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʟ" Pronounciation="gl in aglagle, Mid-Wahgi">
+      <PlacesOfArticulation>Velar</PlacesOfArticulation>
+      <MannersOfArticulation>LateralApproximate</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʟ̠" Pronounciation="l in wool, Some American English">
+      <PlacesOfArticulation>Uvular</PlacesOfArticulation>
+      <MannersOfArticulation>LateralApproximate</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɺ̼" Pronounciation="unknown">
+      <PlacesOfArticulation>Linguolabial</PlacesOfArticulation>
+      <MannersOfArticulation>LateralFlap</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɺ" Pronounciation="r in kokoro, Japanese">
+      <PlacesOfArticulation>Dental, Alveolar, Palatoalveolar</PlacesOfArticulation>
+      <MannersOfArticulation>LateralFlap</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ɭ̆" Pronounciation="unknown">
+      <PlacesOfArticulation>Retroflex</PlacesOfArticulation>
+      <MannersOfArticulation>LateralFlap</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʎ̮" Pronounciation="unknown">
+      <PlacesOfArticulation>Alveolopalatal, Palatal</PlacesOfArticulation>
+      <MannersOfArticulation>LateralFlap</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+    <ConsonantPhoneme Representation="ʟ̆" Pronounciation="unknown">
+      <PlacesOfArticulation>Velar</PlacesOfArticulation>
+      <MannersOfArticulation>LateralFlap</MannersOfArticulation>
+      <Voiced>True</Voiced>
+    </ConsonantPhoneme>
+  </Consonants>
+  <Vowels>
+    <VowelPhoneme Representation="i" Pronounciation="ee in meet, English">
+      <VowelHeights>Close</VowelHeights>
+      <VowelBacknesses>Front</VowelBacknesses>
+      <Rounded>False</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="y" Pronounciation="u in chute, French">
+      <VowelHeights>Close</VowelHeights>
+      <VowelBacknesses>Front</VowelBacknesses>
+      <Rounded>True</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ɨ" Pronounciation="î in înot, Romanian">
+      <VowelHeights>Close</VowelHeights>
+      <VowelBacknesses>Central</VowelBacknesses>
+      <Rounded>False</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ʉ" Pronounciation="oo in choose, Southern American English">
+      <VowelHeights>Close</VowelHeights>
+      <VowelBacknesses>Central</VowelBacknesses>
+      <Rounded>True</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ɯ" Pronounciation="ı in sığ, Turkish">
+      <VowelHeights>Close</VowelHeights>
+      <VowelBacknesses>Back</VowelBacknesses>
+      <Rounded>False</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="u" Pronounciation="u in Fuß, Standard German">
+      <VowelHeights>Close</VowelHeights>
+      <VowelBacknesses>Back</VowelBacknesses>
+      <Rounded>True</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ɪ" Pronounciation="i in bit, Most English">
+      <VowelHeights>NearClose</VowelHeights>
+      <VowelBacknesses>NearFront</VowelBacknesses>
+      <Rounded>False</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ʏ" Pronounciation="u in lune, Quebec French">
+      <VowelHeights>NearClose</VowelHeights>
+      <VowelBacknesses>NearFront</VowelBacknesses>
+      <Rounded>True</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ɪ̈" Pronounciation="i in bit, South African English">
+      <VowelHeights>NearClose</VowelHeights>
+      <VowelBacknesses>Central</VowelBacknesses>
+      <Rounded>False</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ʊ̈" Pronounciation="u in gull, Standard Eastern Norwegian">
+      <VowelHeights>NearClose</VowelHeights>
+      <VowelBacknesses>Central</VowelBacknesses>
+      <Rounded>True</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ʊ" Pronounciation="oo in hook, Australian English">
+      <VowelHeights>NearClose</VowelHeights>
+      <VowelBacknesses>NearBack</VowelBacknesses>
+      <Rounded>False</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="e" Pronounciation="e in ge, Wu Chinese">
+      <VowelHeights>CloseMid</VowelHeights>
+      <VowelBacknesses>Front</VowelBacknesses>
+      <Rounded>False</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ø" Pronounciation="ø in øl, Faroese">
+      <VowelHeights>CloseMid</VowelHeights>
+      <VowelBacknesses>Front</VowelBacknesses>
+      <Rounded>True</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ɘ" Pronounciation="э in үсрэ, Mongolian">
+      <VowelHeights>CloseMid</VowelHeights>
+      <VowelBacknesses>Central</VowelBacknesses>
+      <Rounded>False</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ɵ" Pronounciation="o in toʻgʻri, Uzbek">
+      <VowelHeights>CloseMid</VowelHeights>
+      <VowelBacknesses>Central</VowelBacknesses>
+      <Rounded>True</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ɤ" Pronounciation="oi in doirbh, Scottish Gaelic">
+      <VowelHeights>CloseMid</VowelHeights>
+      <VowelBacknesses>Back</VowelBacknesses>
+      <Rounded>False</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="o" Pronounciation="oo in kool, Standard Belgian Dutch">
+      <VowelHeights>CloseMid</VowelHeights>
+      <VowelBacknesses>Back</VowelBacknesses>
+      <Rounded>True</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="e" Pronounciation="e in bebé, Spanish">
+      <VowelHeights>Mid</VowelHeights>
+      <VowelBacknesses>Front</VowelBacknesses>
+      <Rounded>False</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ø̞" Pronounciation="eu in bleu, Romanian">
+      <VowelHeights>Mid</VowelHeights>
+      <VowelBacknesses>Front</VowelBacknesses>
+      <Rounded>True</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ə" Pronounciation="e in bitte, German">
+      <VowelHeights>Mid</VowelHeights>
+      <VowelBacknesses>Central</VowelBacknesses>
+      <Rounded>False</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ɵ̞" Pronounciation="ё in тётя, Russian">
+      <VowelHeights>Mid</VowelHeights>
+      <VowelBacknesses>Central</VowelBacknesses>
+      <Rounded>True</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ɤ" Pronounciation="ъ in път, Bulgarian">
+      <VowelHeights>Mid</VowelHeights>
+      <VowelBacknesses>Back</VowelBacknesses>
+      <Rounded>False</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="o" Pronounciation="o in ko, Japanese">
+      <VowelHeights>Mid</VowelHeights>
+      <VowelBacknesses>Back</VowelBacknesses>
+      <Rounded>True</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ɛ" Pronounciation="e in bene, Italian">
+      <VowelHeights>OpenMid</VowelHeights>
+      <VowelBacknesses>Front</VowelBacknesses>
+      <Rounded>False</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="œ" Pronounciation="ö in shö, Lori">
+      <VowelHeights>OpenMid</VowelHeights>
+      <VowelBacknesses>Front</VowelBacknesses>
+      <Rounded>True</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ɜ" Pronounciation="e in bet, Norfolk English">
+      <VowelHeights>OpenMid</VowelHeights>
+      <VowelBacknesses>Central</VowelBacknesses>
+      <Rounded>False</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ɞ" Pronounciation="ô in ptôch, Kashubian">
+      <VowelHeights>OpenMid</VowelHeights>
+      <VowelBacknesses>Central</VowelBacknesses>
+      <Rounded>True</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ʌ" Pronounciation="u in gut, Scottish English">
+      <VowelHeights>OpenMid</VowelHeights>
+      <VowelBacknesses>Back</VowelBacknesses>
+      <Rounded>False</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ɔ" Pronounciation="oo in tool, Estonian">
+      <VowelHeights>OpenMid</VowelHeights>
+      <VowelBacknesses>Back</VowelBacknesses>
+      <Rounded>True</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="æ" Pronounciation="a in cat, American English">
+      <VowelHeights>NearOpen</VowelHeights>
+      <VowelBacknesses>Front</VowelBacknesses>
+      <Rounded>False</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ɐ" Pronounciation="a in Sant, Lombard">
+      <VowelHeights>NearOpen</VowelHeights>
+      <VowelBacknesses>Central</VowelBacknesses>
+      <Rounded>Ambiguous</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="a" Pronounciation="aa in braan, North Frisian">
+      <VowelHeights>Open</VowelHeights>
+      <VowelBacknesses>Front</VowelBacknesses>
+      <Rounded>False</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ɶ" Pronounciation="ø in børn, Standard Danish">
+      <VowelHeights>Open</VowelHeights>
+      <VowelBacknesses>Front</VowelBacknesses>
+      <Rounded>True</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ä" Pronounciation="A in Amerika, Czech">
+      <VowelHeights>Open</VowelHeights>
+      <VowelBacknesses>Central</VowelBacknesses>
+      <Rounded>False</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ɒ̈" Pronounciation="first a in bada, Østfold Norwegian">
+      <VowelHeights>Open</VowelHeights>
+      <VowelBacknesses>Central</VowelBacknesses>
+      <Rounded>True</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ɑ" Pronounciation="â in pâte, Quebec French">
+      <VowelHeights>Open</VowelHeights>
+      <VowelBacknesses>Back</VowelBacknesses>
+      <Rounded>False</Rounded>
+    </VowelPhoneme>
+    <VowelPhoneme Representation="ɒ" Pronounciation="o in dono, Uzbek">
+      <VowelHeights>Open</VowelHeights>
+      <VowelBacknesses>Back</VowelBacknesses>
+      <Rounded>True</Rounded>
+    </VowelPhoneme>
+  </Vowels>
+</PhoneticAlphabet>

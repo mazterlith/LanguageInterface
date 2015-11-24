@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CharacterAlphabet Name="EnglishCharacters" xmlns:yaxlib="http://www.sinairv.com/yaxlib/">
+  <Set>
+    <Character Glyph="a">
+      <Phonemes>
+        <VowelPhoneme Rounded="False" Representation="a" Pronounciation="aa in braan, North Frisian" yaxlib:realtype="DynamicLanguageLibrary.VowelPhoneme">
+          <VowelHeights>Open</VowelHeights>
+          <VowelBacknesses>Front</VowelBacknesses>
+        </VowelPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="ɑ">
+      <Phonemes>
+        <VowelPhoneme Rounded="False" Representation="ɑ" Pronounciation="â in pâte, Quebec French" yaxlib:realtype="DynamicLanguageLibrary.VowelPhoneme">
+          <VowelHeights>Open</VowelHeights>
+          <VowelBacknesses>Back</VowelBacknesses>
+        </VowelPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="æ">
+      <Phonemes>
+        <VowelPhoneme Rounded="False" Representation="æ" Pronounciation="a in cat, American English" yaxlib:realtype="DynamicLanguageLibrary.VowelPhoneme">
+          <VowelHeights>NearOpen</VowelHeights>
+          <VowelBacknesses>Front</VowelBacknesses>
+        </VowelPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="b">
+      <Phonemes>
+        <ConsonantPhoneme Voiced="True" Representation="b" Pronounciation="b in aback, English" yaxlib:realtype="DynamicLanguageLibrary.ConsonantPhoneme">
+          <PlacesOfArticulation>Bilabial</PlacesOfArticulation>
+          <MannersOfArticulation>Stop</MannersOfArticulation>
+        </ConsonantPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="d">
+      <Phonemes>
+        <ConsonantPhoneme Voiced="True" Representation="d" Pronounciation="d in dash, English" yaxlib:realtype="DynamicLanguageLibrary.ConsonantPhoneme">
+          <PlacesOfArticulation>Dental, Alveolar, Palatoalveolar</PlacesOfArticulation>
+          <MannersOfArticulation>Stop</MannersOfArticulation>
+        </ConsonantPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="e">
+      <Phonemes>
+        <VowelPhoneme Rounded="False" Representation="e" Pronounciation="e in ge, Wu Chinese" yaxlib:realtype="DynamicLanguageLibrary.VowelPhoneme">
+          <VowelHeights>CloseMid</VowelHeights>
+          <VowelBacknesses>Front</VowelBacknesses>
+        </VowelPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="ɛ">
+      <Phonemes>
+        <VowelPhoneme Rounded="False" Representation="ɛ" Pronounciation="e in bene, Italian" yaxlib:realtype="DynamicLanguageLibrary.VowelPhoneme">
+          <VowelHeights>OpenMid</VowelHeights>
+          <VowelBacknesses>Front</VowelBacknesses>
+        </VowelPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="ɜ">
+      <Phonemes>
+        <VowelPhoneme Rounded="False" Representation="ɜ" Pronounciation="e in bet, Norfolk English" yaxlib:realtype="DynamicLanguageLibrary.VowelPhoneme">
+          <VowelHeights>OpenMid</VowelHeights>
+          <VowelBacknesses>Central</VowelBacknesses>
+        </VowelPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="ə">
+      <Phonemes>
+        <VowelPhoneme Rounded="False" Representation="ə" Pronounciation="e in bitte, German" yaxlib:realtype="DynamicLanguageLibrary.VowelPhoneme">
+          <VowelHeights>Mid</VowelHeights>
+          <VowelBacknesses>Central</VowelBacknesses>
+        </VowelPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="f">
+      <Phonemes>
+        <ConsonantPhoneme Voiced="False" Representation="f" Pronounciation="f in fill, English" yaxlib:realtype="DynamicLanguageLibrary.ConsonantPhoneme">
+          <PlacesOfArticulation>Labiodental</PlacesOfArticulation>
+          <MannersOfArticulation>NonSibilantFricative</MannersOfArticulation>
+        </ConsonantPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="g">
+      <Phonemes>
+        <ConsonantPhoneme Voiced="True" Representation="g" Pronounciation="g in gaggle, English" yaxlib:realtype="DynamicLanguageLibrary.ConsonantPhoneme">
+          <PlacesOfArticulation>Velar</PlacesOfArticulation>
+          <MannersOfArticulation>Stop</MannersOfArticulation>
+        </ConsonantPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="h">
+      <Phonemes>
+        <ConsonantPhoneme Voiced="False" Representation="h" Pronounciation="h in high, English" yaxlib:realtype="DynamicLanguageLibrary.ConsonantPhoneme">
+          <PlacesOfArticulation>Glottal</PlacesOfArticulation>
+          <MannersOfArticulation>NonSibilantFricative, Approximant</MannersOfArticulation>
+        </ConsonantPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="i">
+      <Phonemes>
+        <VowelPhoneme Rounded="False" Representation="i" Pronounciation="ee in meet, English" yaxlib:realtype="DynamicLanguageLibrary.VowelPhoneme">
+          <VowelHeights>Close</VowelHeights>
+          <VowelBacknesses>Front</VowelBacknesses>
+        </VowelPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="I">
+      <Phonemes>
+        <VowelPhoneme Rounded="False" Representation="ɪ" Pronounciation="i in bit, Most English" yaxlib:realtype="DynamicLanguageLibrary.VowelPhoneme">
+          <VowelHeights>NearClose</VowelHeights>
+          <VowelBacknesses>NearFront</VowelBacknesses>
+        </VowelPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="j">
+      <Phonemes>
+        <ConsonantPhoneme Voiced="True" Representation="d͡ʒ" Pronounciation="j in jump, English" yaxlib:realtype="DynamicLanguageLibrary.ConsonantPhoneme">
+          <PlacesOfArticulation>Palatoalveolar</PlacesOfArticulation>
+          <MannersOfArticulation>SibilantAffricate</MannersOfArticulation>
+        </ConsonantPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="k">
+      <Phonemes>
+        <ConsonantPhoneme Voiced="False" Representation="k" Pronounciation="k in kiss, English" yaxlib:realtype="DynamicLanguageLibrary.ConsonantPhoneme">
+          <PlacesOfArticulation>Velar</PlacesOfArticulation>
+          <MannersOfArticulation>Stop</MannersOfArticulation>
+        </ConsonantPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="l">
+      <Phonemes>
+        <ConsonantPhoneme Voiced="True" Representation="l" Pronounciation="l in elem, Hungarian" yaxlib:realtype="DynamicLanguageLibrary.ConsonantPhoneme">
+          <PlacesOfArticulation>Dental, Alveolar, Palatoalveolar</PlacesOfArticulation>
+          <MannersOfArticulation>LateralApproximate</MannersOfArticulation>
+        </ConsonantPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="m">
+      <Phonemes>
+        <ConsonantPhoneme Voiced="True" Representation="m" Pronounciation="m in map, English" yaxlib:realtype="DynamicLanguageLibrary.ConsonantPhoneme">
+          <PlacesOfArticulation>Bilabial</PlacesOfArticulation>
+          <MannersOfArticulation>Nasal</MannersOfArticulation>
+        </ConsonantPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="n">
+      <Phonemes>
+        <ConsonantPhoneme Voiced="True" Representation="n" Pronounciation="n in month, English" yaxlib:realtype="DynamicLanguageLibrary.ConsonantPhoneme">
+          <PlacesOfArticulation>Dental, Alveolar, Palatoalveolar</PlacesOfArticulation>
+          <MannersOfArticulation>Nasal</MannersOfArticulation>
+        </ConsonantPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="o">
+      <Phonemes>
+        <VowelPhoneme Rounded="True" Representation="o" Pronounciation="oo in kool, Standard Belgian Dutch" yaxlib:realtype="DynamicLanguageLibrary.VowelPhoneme">
+          <VowelHeights>CloseMid</VowelHeights>
+          <VowelBacknesses>Back</VowelBacknesses>
+        </VowelPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="ɔ">
+      <Phonemes>
+        <VowelPhoneme Rounded="True" Representation="ɔ" Pronounciation="oo in tool, Estonian" yaxlib:realtype="DynamicLanguageLibrary.VowelPhoneme">
+          <VowelHeights>OpenMid</VowelHeights>
+          <VowelBacknesses>Back</VowelBacknesses>
+        </VowelPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="p">
+      <Phonemes>
+        <ConsonantPhoneme Voiced="False" Representation="p" Pronounciation="p in push, English" yaxlib:realtype="DynamicLanguageLibrary.ConsonantPhoneme">
+          <PlacesOfArticulation>Bilabial</PlacesOfArticulation>
+          <MannersOfArticulation>Stop</MannersOfArticulation>
+        </ConsonantPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="r">
+      <Phonemes>
+        <ConsonantPhoneme Voiced="True" Representation="ɹ" Pronounciation="r in red, most American English" yaxlib:realtype="DynamicLanguageLibrary.ConsonantPhoneme">
+          <PlacesOfArticulation>Alveolar, Palatoalveolar</PlacesOfArticulation>
+          <MannersOfArticulation>Approximant</MannersOfArticulation>
+        </ConsonantPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="s">
+      <Phonemes>
+        <ConsonantPhoneme Voiced="False" Representation="s" Pronounciation="s in sand, English" yaxlib:realtype="DynamicLanguageLibrary.ConsonantPhoneme">
+          <PlacesOfArticulation>Dental, Alveolar</PlacesOfArticulation>
+          <MannersOfArticulation>SibilantFricative</MannersOfArticulation>
+        </ConsonantPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="t">
+      <Phonemes>
+        <ConsonantPhoneme Voiced="False" Representation="t" Pronounciation="t in tick, English" yaxlib:realtype="DynamicLanguageLibrary.ConsonantPhoneme">
+          <PlacesOfArticulation>Dental, Alveolar, Palatoalveolar</PlacesOfArticulation>
+          <MannersOfArticulation>Stop</MannersOfArticulation>
+        </ConsonantPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="u">
+      <Phonemes>
+        <VowelPhoneme Rounded="True" Representation="u" Pronounciation="u in Fuß, Standard German" yaxlib:realtype="DynamicLanguageLibrary.VowelPhoneme">
+          <VowelHeights>Close</VowelHeights>
+          <VowelBacknesses>Back</VowelBacknesses>
+        </VowelPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="ʌ">
+      <Phonemes>
+        <VowelPhoneme Rounded="False" Representation="ʌ" Pronounciation="u in gut, Scottish English" yaxlib:realtype="DynamicLanguageLibrary.VowelPhoneme">
+          <VowelHeights>OpenMid</VowelHeights>
+          <VowelBacknesses>Back</VowelBacknesses>
+        </VowelPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="ʊ">
+      <Phonemes>
+        <VowelPhoneme Rounded="True" Representation="ʊ" Pronounciation="oo in hook, Australian English" yaxlib:realtype="DynamicLanguageLibrary.VowelPhoneme">
+          <VowelHeights>NearClose</VowelHeights>
+          <VowelBacknesses>NearBack</VowelBacknesses>
+        </VowelPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="v">
+      <Phonemes>
+        <ConsonantPhoneme Voiced="True" Representation="v" Pronounciation="v in valve, English" yaxlib:realtype="DynamicLanguageLibrary.ConsonantPhoneme">
+          <PlacesOfArticulation>Labiodental</PlacesOfArticulation>
+          <MannersOfArticulation>NonSibilantFricative</MannersOfArticulation>
+        </ConsonantPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="y">
+      <Phonemes>
+        <ConsonantPhoneme Voiced="True" Representation="j" Pronounciation="y in you, English" yaxlib:realtype="DynamicLanguageLibrary.ConsonantPhoneme">
+          <PlacesOfArticulation>Alveolopalatal, Palatal</PlacesOfArticulation>
+          <MannersOfArticulation>Approximant</MannersOfArticulation>
+        </ConsonantPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="z">
+      <Phonemes>
+        <ConsonantPhoneme Voiced="True" Representation="z" Pronounciation="z in size, English" yaxlib:realtype="DynamicLanguageLibrary.ConsonantPhoneme">
+          <PlacesOfArticulation>Dental, Alveolar</PlacesOfArticulation>
+          <MannersOfArticulation>SibilantFricative</MannersOfArticulation>
+        </ConsonantPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="θ">
+      <Phonemes>
+        <ConsonantPhoneme Voiced="False" Representation="θ" Pronounciation="th in thin, English" yaxlib:realtype="DynamicLanguageLibrary.ConsonantPhoneme">
+          <PlacesOfArticulation>Dental</PlacesOfArticulation>
+          <MannersOfArticulation>NonSibilantFricative</MannersOfArticulation>
+        </ConsonantPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="ð">
+      <Phonemes>
+        <ConsonantPhoneme Voiced="True" Representation="ð" Pronounciation="th in this, English" yaxlib:realtype="DynamicLanguageLibrary.ConsonantPhoneme">
+          <PlacesOfArticulation>Dental</PlacesOfArticulation>
+          <MannersOfArticulation>NonSibilantFricative</MannersOfArticulation>
+        </ConsonantPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="ʃ">
+      <Phonemes>
+        <ConsonantPhoneme Voiced="False" Representation="ʃ" Pronounciation="sh in sheep, English" yaxlib:realtype="DynamicLanguageLibrary.ConsonantPhoneme">
+          <PlacesOfArticulation>Palatoalveolar</PlacesOfArticulation>
+          <MannersOfArticulation>SibilantFricative</MannersOfArticulation>
+        </ConsonantPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="ʒ">
+      <Phonemes>
+        <ConsonantPhoneme Voiced="True" Representation="ʒ" Pronounciation="si in vision, English" yaxlib:realtype="DynamicLanguageLibrary.ConsonantPhoneme">
+          <PlacesOfArticulation>Palatoalveolar</PlacesOfArticulation>
+          <MannersOfArticulation>SibilantFricative</MannersOfArticulation>
+        </ConsonantPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="t͡ʃ">
+      <Phonemes>
+        <ConsonantPhoneme Voiced="False" Representation="t͡ʃ" Pronounciation="ch in bleach, English" yaxlib:realtype="DynamicLanguageLibrary.ConsonantPhoneme">
+          <PlacesOfArticulation>Palatoalveolar</PlacesOfArticulation>
+          <MannersOfArticulation>SibilantAffricate</MannersOfArticulation>
+        </ConsonantPhoneme>
+      </Phonemes>
+    </Character>
+    <Character Glyph="ŋ">
+      <Phonemes>
+        <ConsonantPhoneme Voiced="True" Representation="ŋ" Pronounciation="ng in sing, English" yaxlib:realtype="DynamicLanguageLibrary.ConsonantPhoneme">
+          <PlacesOfArticulation>Velar</PlacesOfArticulation>
+          <MannersOfArticulation>Nasal</MannersOfArticulation>
+        </ConsonantPhoneme>
+      </Phonemes>
+    </Character>
+  </Set>
+</CharacterAlphabet>

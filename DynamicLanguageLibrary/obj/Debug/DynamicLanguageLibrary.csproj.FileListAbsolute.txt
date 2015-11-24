@@ -1,0 +1,10 @@
+C:\Users\Ben\Documents\Visual Studio 2012\Projects\LanguageInterface\DynamicLanguageLibrary\bin\Debug\DynamicLanguageLibrary.dll
+C:\Users\Ben\Documents\Visual Studio 2012\Projects\LanguageInterface\DynamicLanguageLibrary\bin\Debug\DynamicLanguageLibrary.pdb
+C:\Users\Ben\Documents\Visual Studio 2012\Projects\LanguageInterface\DynamicLanguageLibrary\bin\Debug\YAXLib.dll
+C:\Users\Ben\Documents\Visual Studio 2012\Projects\LanguageInterface\DynamicLanguageLibrary\bin\Debug\YAXLib.pdb
+C:\Users\Ben\Documents\Visual Studio 2012\Projects\LanguageInterface\DynamicLanguageLibrary\bin\Debug\YAXLib.xml
+C:\Users\Ben\Documents\Visual Studio 2012\Projects\LanguageInterface\DynamicLanguageLibrary\obj\Debug\DynamicLanguageLibrary.dll
+C:\Users\Ben\Documents\Visual Studio 2012\Projects\LanguageInterface\DynamicLanguageLibrary\obj\Debug\DynamicLanguageLibrary.pdb
+C:\Users\Ben\Documents\Visual Studio 2012\Projects\LanguageInterface\DynamicLanguageLibrary\bin\Debug\MorphemeSets\EnglishMorphemes.txt
+C:\Users\Ben\Documents\Visual Studio 2012\Projects\LanguageInterface\DynamicLanguageLibrary\bin\Debug\PhonemeAlphabets\InternationalPhoneticAlphabet.xml
+C:\Users\Ben\Documents\Visual Studio 2012\Projects\LanguageInterface\DynamicLanguageLibrary\obj\Debug\DynamicLanguageLibrary.csprojResolveAssemblyReference.cache
