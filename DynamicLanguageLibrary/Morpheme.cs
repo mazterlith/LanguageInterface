@@ -7,28 +7,19 @@ using System.Threading.Tasks;
 
 namespace DynamicLanguageLibrary
 {
-    public class Morpheme
+    public class Morpheme : ObservableCollection<Character>
     {
-        public ObservableCollection<Phoneme> Phonemes { get; set; }
+        public virtual object Meaning { get; set; }
 
-        public Morpheme(IEnumerable<Phoneme> phonemes = null)
-        {
-            if (phonemes != null)
-                this.Phonemes = new ObservableCollection<Phoneme>(phonemes);
-            else
-                this.Phonemes = new ObservableCollection<Phoneme>();
-        }
+        public Morpheme() { }
 
         public override string ToString()
         {
-            if (Phonemes == null)
-                return String.Empty;
-
             StringBuilder sb = new StringBuilder();
 
-            foreach (Phoneme p in Phonemes)
+            foreach (Character c in this)
             {
-                sb.Append(p.Representation);
+                sb.Append(c.Glyph);
             }
 
             return sb.ToString();

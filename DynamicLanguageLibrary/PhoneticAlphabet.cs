@@ -28,12 +28,18 @@ namespace DynamicLanguageLibrary
             this.Name = String.Empty;
         }
 
-        public PhoneticAlphabet(string filename = null)
+        public PhoneticAlphabet(string filename)
             : this()
         {
-
-            if (filename != null)
-                this.Load(filename);
+            try
+            {
+                if (filename != null)
+                    this.Load(filename);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         #endregion

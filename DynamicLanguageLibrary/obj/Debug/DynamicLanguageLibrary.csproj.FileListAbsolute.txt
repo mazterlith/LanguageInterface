@@ -8,3 +8,6 @@ C:\Users\Ben\Documents\Visual Studio 2012\Projects\LanguageInterface\DynamicLang
 C:\Users\Ben\Documents\Visual Studio 2012\Projects\LanguageInterface\DynamicLanguageLibrary\bin\Debug\MorphemeSets\EnglishMorphemes.txt
 C:\Users\Ben\Documents\Visual Studio 2012\Projects\LanguageInterface\DynamicLanguageLibrary\bin\Debug\PhonemeAlphabets\InternationalPhoneticAlphabet.xml
 C:\Users\Ben\Documents\Visual Studio 2012\Projects\LanguageInterface\DynamicLanguageLibrary\obj\Debug\DynamicLanguageLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Ben\Documents\Visual Studio 2012\Projects\LanguageInterface\DynamicLanguageLibrary\bin\Debug\CharacterAlphabets\EnglishCharacters.xml
+C:\Users\Ben\documents\visual studio 2012\Projects\LanguageInterface\DynamicLanguageLibrary\bin\Debug\LanguageMathLibrary.dll
+C:\Users\Ben\documents\visual studio 2012\Projects\LanguageInterface\DynamicLanguageLibrary\bin\Debug\LanguageMathLibrary.pdb

@@ -46,21 +46,28 @@
     <Compile Include="CharacterAlphabet.cs" />
     <Compile Include="Language.cs" />
     <Compile Include="Morpheme.cs" />
+    <Compile Include="MorphemeGenerator.cs" />
     <Compile Include="Phoneme.cs" />
     <Compile Include="PhoneticAlphabet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Word.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CharacterAlphabets\" />
-  </ItemGroup>
-  <ItemGroup>
+    <Content Include="CharacterAlphabets\EnglishCharacters.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="MorphemeSets\EnglishMorphemes.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="PhonemeAlphabets\InternationalPhoneticAlphabet.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LanguageMathLibrary\LanguageMathLibrary.csproj">
+      <Project>{041abc99-1204-406e-84ab-902bf8cd2f7f}</Project>
+      <Name>LanguageMathLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -11,18 +11,23 @@ namespace DynamicLanguageLibrary
     public class Language
     {
         public PhoneticAlphabet PhoneticAlphabet { get; set; }
-        public CharacterAlphabet CharacterAlphabet { get; set; }
+        public CharacterAlphabet CharacterAlphabet
+        {
+            get { return _characterAlphabet; }
+            set
+            {
+                _characterAlphabet = value;
+                _morphemeGenerator = new MorphemeGenerator(_characterAlphabet);
+            }
+        }
+
         public string Name { get; set; }
 
-        public Language(string phonemeFile = null, string characterFile = null, string morphemeFile = null)
+        private CharacterAlphabet _characterAlphabet;
+        private MorphemeGenerator _morphemeGenerator;
+
+        public Language()
         {
-            PhoneticAlphabet = new PhoneticAlphabet(phonemeFile);
-
-            if (characterFile != null)
-                CharacterAlphabet = new CharacterAlphabet(characterFile);
-
-            if (morphemeFile != null && characterFile != null)
-                SetMorphemeStats(morphemeFile);
         }
 
         public void SetMorphemeStats(string filename)
@@ -37,21 +42,10 @@ namespace DynamicLanguageLibrary
                 throw new FileLoadException("Error in SetMorphemeStats()", e);
             }
 
-            int numWeights = 0;
-            int[] lengthWeights = new int[16];
-
-            string source = sr.ReadLine();
-
-            while (sr.Peek() >= 0)
+            if (_morphemeGenerator != null)
             {
-                string phoneme = sr.ReadLine();
-
-                lengthWeights[phoneme.Length - 1]++;
-                numWeights++;
-
-                char a = phoneme[0];
+                _morphemeGenerator.SetMorphemeStats(filename);
             }
-
         }
 
         public Morpheme GenerateMorpheme(int? seed = null)
@@ -79,14 +73,11 @@ namespace DynamicLanguageLibrary
             return morpheme;
         }
 
-        public static void SaveoutIPA(string filename = null)
+        public static PhoneticAlphabet GenerateIPA()
         {
-            if (filename == null)
-                filename = "InternationalPhoneticAlphabet.xml";
-
             PhoneticAlphabet IPA = new PhoneticAlphabet()
             {
-                Name = "IPA"
+                Name = "International Phonetic Alphabet"
             };
 
             #region CONSONANTS
@@ -726,182 +717,182 @@ namespace DynamicLanguageLibrary
             #region Closes
 
             IPA.Vowels.Add(new VowelPhoneme("i", "ee in meet, English", AmbiguousBool.False,
-                new List<VowelHeight> { VowelHeight.Close },
-                new List<VowelBackness> { VowelBackness.Front }));
+                new List<TongueHeight> { TongueHeight.Close },
+                new List<TongueBackness> { TongueBackness.Front }));
 
             IPA.Vowels.Add(new VowelPhoneme("y", "u in chute, French", AmbiguousBool.True,
-                new List<VowelHeight> { VowelHeight.Close },
-                new List<VowelBackness> { VowelBackness.Front }));
+                new List<TongueHeight> { TongueHeight.Close },
+                new List<TongueBackness> { TongueBackness.Front }));
 
             IPA.Vowels.Add(new VowelPhoneme("ɨ", "î in înot, Romanian", AmbiguousBool.False,
-                new List<VowelHeight> { VowelHeight.Close },
-                new List<VowelBackness> { VowelBackness.Central }));
+                new List<TongueHeight> { TongueHeight.Close },
+                new List<TongueBackness> { TongueBackness.Central }));
 
             IPA.Vowels.Add(new VowelPhoneme("ʉ", "oo in choose, Southern American English", AmbiguousBool.True,
-                new List<VowelHeight> { VowelHeight.Close },
-                new List<VowelBackness> { VowelBackness.Central }));
+                new List<TongueHeight> { TongueHeight.Close },
+                new List<TongueBackness> { TongueBackness.Central }));
 
             IPA.Vowels.Add(new VowelPhoneme("ɯ", "ı in sığ, Turkish", AmbiguousBool.False,
-                new List<VowelHeight> { VowelHeight.Close },
-                new List<VowelBackness> { VowelBackness.Back }));
+                new List<TongueHeight> { TongueHeight.Close },
+                new List<TongueBackness> { TongueBackness.Back }));
 
             IPA.Vowels.Add(new VowelPhoneme("u", "u in Fuß, Standard German", AmbiguousBool.True,
-                new List<VowelHeight> { VowelHeight.Close },
-                new List<VowelBackness> { VowelBackness.Back }));
+                new List<TongueHeight> { TongueHeight.Close },
+                new List<TongueBackness> { TongueBackness.Back }));
 
             #endregion
 
             #region Near-closes
 
             IPA.Vowels.Add(new VowelPhoneme("ɪ", "i in bit, Most English", AmbiguousBool.False,
-                new List<VowelHeight> { VowelHeight.NearClose },
-                new List<VowelBackness> { VowelBackness.NearFront }));
+                new List<TongueHeight> { TongueHeight.NearClose },
+                new List<TongueBackness> { TongueBackness.NearFront }));
 
             IPA.Vowels.Add(new VowelPhoneme("ʏ", "u in lune, Quebec French", AmbiguousBool.True,
-                new List<VowelHeight> { VowelHeight.NearClose },
-                new List<VowelBackness> { VowelBackness.NearFront }));
+                new List<TongueHeight> { TongueHeight.NearClose },
+                new List<TongueBackness> { TongueBackness.NearFront }));
 
             IPA.Vowels.Add(new VowelPhoneme("ɪ̈", "i in bit, South African English", AmbiguousBool.False,
-                new List<VowelHeight> { VowelHeight.NearClose },
-                new List<VowelBackness> { VowelBackness.Central }));
+                new List<TongueHeight> { TongueHeight.NearClose },
+                new List<TongueBackness> { TongueBackness.Central }));
 
             IPA.Vowels.Add(new VowelPhoneme("ʊ̈", "u in gull, Standard Eastern Norwegian", AmbiguousBool.True,
-                new List<VowelHeight> { VowelHeight.NearClose },
-                new List<VowelBackness> { VowelBackness.Central }));
+                new List<TongueHeight> { TongueHeight.NearClose },
+                new List<TongueBackness> { TongueBackness.Central }));
 
             IPA.Vowels.Add(new VowelPhoneme("ʊ", "oo in hook, Australian English", AmbiguousBool.True,
-                new List<VowelHeight> { VowelHeight.NearClose },
-                new List<VowelBackness> { VowelBackness.NearBack }));
+                new List<TongueHeight> { TongueHeight.NearClose },
+                new List<TongueBackness> { TongueBackness.NearBack }));
 
             #endregion
 
             #region Close-mids
 
             IPA.Vowels.Add(new VowelPhoneme("e", "e in ge, Wu Chinese", AmbiguousBool.False,
-                new List<VowelHeight> { VowelHeight.CloseMid },
-                new List<VowelBackness> { VowelBackness.Front }));
+                new List<TongueHeight> { TongueHeight.CloseMid },
+                new List<TongueBackness> { TongueBackness.Front }));
 
             IPA.Vowels.Add(new VowelPhoneme("ø", "ø in øl, Faroese", AmbiguousBool.True,
-                new List<VowelHeight> { VowelHeight.CloseMid },
-                new List<VowelBackness> { VowelBackness.Front }));
+                new List<TongueHeight> { TongueHeight.CloseMid },
+                new List<TongueBackness> { TongueBackness.Front }));
 
             IPA.Vowels.Add(new VowelPhoneme("ɘ", "э in үсрэ, Mongolian", AmbiguousBool.False,
-                new List<VowelHeight> { VowelHeight.CloseMid },
-                new List<VowelBackness> { VowelBackness.Central }));
+                new List<TongueHeight> { TongueHeight.CloseMid },
+                new List<TongueBackness> { TongueBackness.Central }));
 
             IPA.Vowels.Add(new VowelPhoneme("ɵ", "o in toʻgʻri, Uzbek", AmbiguousBool.True,
-                new List<VowelHeight> { VowelHeight.CloseMid },
-                new List<VowelBackness> { VowelBackness.Central }));
+                new List<TongueHeight> { TongueHeight.CloseMid },
+                new List<TongueBackness> { TongueBackness.Central }));
 
             IPA.Vowels.Add(new VowelPhoneme("ɤ", "oi in doirbh, Scottish Gaelic", AmbiguousBool.False,
-                new List<VowelHeight> { VowelHeight.CloseMid },
-                new List<VowelBackness> { VowelBackness.Back }));
+                new List<TongueHeight> { TongueHeight.CloseMid },
+                new List<TongueBackness> { TongueBackness.Back }));
 
             IPA.Vowels.Add(new VowelPhoneme("o", "oo in kool, Standard Belgian Dutch", AmbiguousBool.True,
-                new List<VowelHeight> { VowelHeight.CloseMid },
-                new List<VowelBackness> { VowelBackness.Back }));
+                new List<TongueHeight> { TongueHeight.CloseMid },
+                new List<TongueBackness> { TongueBackness.Back }));
 
             #endregion
 
             #region Mids
 
             IPA.Vowels.Add(new VowelPhoneme("e", "e in bebé, Spanish", AmbiguousBool.False,
-                new List<VowelHeight> { VowelHeight.Mid },
-                new List<VowelBackness> { VowelBackness.Front }));
+                new List<TongueHeight> { TongueHeight.Mid },
+                new List<TongueBackness> { TongueBackness.Front }));
 
             IPA.Vowels.Add(new VowelPhoneme("ø̞", "eu in bleu, Romanian", AmbiguousBool.True,
-                new List<VowelHeight> { VowelHeight.Mid },
-                new List<VowelBackness> { VowelBackness.Front }));
+                new List<TongueHeight> { TongueHeight.Mid },
+                new List<TongueBackness> { TongueBackness.Front }));
 
             IPA.Vowels.Add(new VowelPhoneme("ə", "e in bitte, German", AmbiguousBool.False,
-                new List<VowelHeight> { VowelHeight.Mid },
-                new List<VowelBackness> { VowelBackness.Central }));
+                new List<TongueHeight> { TongueHeight.Mid },
+                new List<TongueBackness> { TongueBackness.Central }));
 
             IPA.Vowels.Add(new VowelPhoneme("ɵ̞", "ё in тётя, Russian", AmbiguousBool.True,
-                new List<VowelHeight> { VowelHeight.Mid },
-                new List<VowelBackness> { VowelBackness.Central }));
+                new List<TongueHeight> { TongueHeight.Mid },
+                new List<TongueBackness> { TongueBackness.Central }));
 
             IPA.Vowels.Add(new VowelPhoneme("ɤ", "ъ in път, Bulgarian", AmbiguousBool.False,
-                new List<VowelHeight> { VowelHeight.Mid },
-                new List<VowelBackness> { VowelBackness.Back }));
+                new List<TongueHeight> { TongueHeight.Mid },
+                new List<TongueBackness> { TongueBackness.Back }));
 
             IPA.Vowels.Add(new VowelPhoneme("o", "o in ko, Japanese", AmbiguousBool.True,
-                new List<VowelHeight> { VowelHeight.Mid },
-                new List<VowelBackness> { VowelBackness.Back }));
+                new List<TongueHeight> { TongueHeight.Mid },
+                new List<TongueBackness> { TongueBackness.Back }));
 
             #endregion
 
             #region Open-mids
 
             IPA.Vowels.Add(new VowelPhoneme("ɛ", "e in bene, Italian", AmbiguousBool.False,
-                new List<VowelHeight> { VowelHeight.OpenMid },
-                new List<VowelBackness> { VowelBackness.Front }));
+                new List<TongueHeight> { TongueHeight.OpenMid },
+                new List<TongueBackness> { TongueBackness.Front }));
 
             IPA.Vowels.Add(new VowelPhoneme("œ", "ö in shö, Lori", AmbiguousBool.True,
-                new List<VowelHeight> { VowelHeight.OpenMid },
-                new List<VowelBackness> { VowelBackness.Front }));
+                new List<TongueHeight> { TongueHeight.OpenMid },
+                new List<TongueBackness> { TongueBackness.Front }));
 
             IPA.Vowels.Add(new VowelPhoneme("ɜ", "e in bet, Norfolk English", AmbiguousBool.False,
-                new List<VowelHeight> { VowelHeight.OpenMid },
-                new List<VowelBackness> { VowelBackness.Central }));
+                new List<TongueHeight> { TongueHeight.OpenMid },
+                new List<TongueBackness> { TongueBackness.Central }));
 
             IPA.Vowels.Add(new VowelPhoneme("ɞ", "ô in ptôch, Kashubian", AmbiguousBool.True,
-                new List<VowelHeight> { VowelHeight.OpenMid },
-                new List<VowelBackness> { VowelBackness.Central }));
+                new List<TongueHeight> { TongueHeight.OpenMid },
+                new List<TongueBackness> { TongueBackness.Central }));
 
             IPA.Vowels.Add(new VowelPhoneme("ʌ", "u in gut, Scottish English", AmbiguousBool.False,
-                new List<VowelHeight> { VowelHeight.OpenMid },
-                new List<VowelBackness> { VowelBackness.Back }));
+                new List<TongueHeight> { TongueHeight.OpenMid },
+                new List<TongueBackness> { TongueBackness.Back }));
 
             IPA.Vowels.Add(new VowelPhoneme("ɔ", "oo in tool, Estonian", AmbiguousBool.True,
-                new List<VowelHeight> { VowelHeight.OpenMid },
-                new List<VowelBackness> { VowelBackness.Back }));
+                new List<TongueHeight> { TongueHeight.OpenMid },
+                new List<TongueBackness> { TongueBackness.Back }));
 
             #endregion
 
             #region Near-opens
 
             IPA.Vowels.Add(new VowelPhoneme("æ", "a in cat, American English", AmbiguousBool.False,
-                new List<VowelHeight> { VowelHeight.NearOpen },
-                new List<VowelBackness> { VowelBackness.Front }));
+                new List<TongueHeight> { TongueHeight.NearOpen },
+                new List<TongueBackness> { TongueBackness.Front }));
 
             IPA.Vowels.Add(new VowelPhoneme("ɐ", "a in Sant, Lombard", AmbiguousBool.Ambiguous,
-                new List<VowelHeight> { VowelHeight.NearOpen },
-                new List<VowelBackness> { VowelBackness.Central }));
+                new List<TongueHeight> { TongueHeight.NearOpen },
+                new List<TongueBackness> { TongueBackness.Central }));
 
             #endregion
 
             #region Opens
 
             IPA.Vowels.Add(new VowelPhoneme("a", "aa in braan, North Frisian", AmbiguousBool.False,
-                new List<VowelHeight> { VowelHeight.Open },
-                new List<VowelBackness> { VowelBackness.Front }));
+                new List<TongueHeight> { TongueHeight.Open },
+                new List<TongueBackness> { TongueBackness.Front }));
 
             IPA.Vowels.Add(new VowelPhoneme("ɶ", "ø in børn, Standard Danish", AmbiguousBool.True,
-                new List<VowelHeight> { VowelHeight.Open },
-                new List<VowelBackness> { VowelBackness.Front }));
+                new List<TongueHeight> { TongueHeight.Open },
+                new List<TongueBackness> { TongueBackness.Front }));
 
             IPA.Vowels.Add(new VowelPhoneme("ä", "A in Amerika, Czech", AmbiguousBool.False,
-                new List<VowelHeight> { VowelHeight.Open },
-                new List<VowelBackness> { VowelBackness.Central }));
+                new List<TongueHeight> { TongueHeight.Open },
+                new List<TongueBackness> { TongueBackness.Central }));
 
             IPA.Vowels.Add(new VowelPhoneme("ɒ̈", "first a in bada, Østfold Norwegian", AmbiguousBool.True,
-                new List<VowelHeight> { VowelHeight.Open },
-                new List<VowelBackness> { VowelBackness.Central }));
+                new List<TongueHeight> { TongueHeight.Open },
+                new List<TongueBackness> { TongueBackness.Central }));
 
             IPA.Vowels.Add(new VowelPhoneme("ɑ", "â in pâte, Quebec French", AmbiguousBool.False,
-                new List<VowelHeight> { VowelHeight.Open },
-                new List<VowelBackness> { VowelBackness.Back }));
+                new List<TongueHeight> { TongueHeight.Open },
+                new List<TongueBackness> { TongueBackness.Back }));
 
             IPA.Vowels.Add(new VowelPhoneme("ɒ", "o in dono, Uzbek", AmbiguousBool.True,
-                new List<VowelHeight> { VowelHeight.Open },
-                new List<VowelBackness> { VowelBackness.Back }));
+                new List<TongueHeight> { TongueHeight.Open },
+                new List<TongueBackness> { TongueBackness.Back }));
 
             #endregion
 
             #endregion
 
-            IPA.Save(filename);
+            return IPA;
         }
 
         public static void SaveoutEnglishChars(PhoneticAlphabet IPA, string filename = null)
@@ -919,29 +910,29 @@ namespace DynamicLanguageLibrary
             phonemesForCharacter = IPA.Vowels.Where
                 (
                     x =>
-                    x.VowelBacknesses.Contains(VowelBackness.Front) &&
-                    x.VowelHeights.Contains(VowelHeight.Open) &&
+                    x.Backnesses.Contains(TongueBackness.Front) &&
+                    x.Heights.Contains(TongueHeight.Open) &&
                     x.Rounded.ToBool() == false
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("a", phonemesForCharacter));
+            charAlphabet.Add(new Character("a", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Vowels.Where
                 (
                     x =>
-                    x.VowelBacknesses.Contains(VowelBackness.Back) &&
-                    x.VowelHeights.Contains(VowelHeight.Open) &&
+                    x.Backnesses.Contains(TongueBackness.Back) &&
+                    x.Heights.Contains(TongueHeight.Open) &&
                     x.Rounded.ToBool() == false
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("ɑ", phonemesForCharacter));
+            charAlphabet.Add(new Character("ɑ", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Vowels.Where
                 (
                     x =>
-                    x.VowelBacknesses.Contains(VowelBackness.Front) &&
-                    x.VowelHeights.Contains(VowelHeight.NearOpen) &&
+                    x.Backnesses.Contains(TongueBackness.Front) &&
+                    x.Heights.Contains(TongueHeight.NearOpen) &&
                     x.Rounded.ToBool() == false
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("æ", phonemesForCharacter));
+            charAlphabet.Add(new Character("æ", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Consonants.Where
                 (
@@ -950,7 +941,7 @@ namespace DynamicLanguageLibrary
                     x.PlacesOfArticulation.Contains(PlaceOfArticulation.Bilabial) &&
                     x.Voiced.ToBool() == true
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("b", phonemesForCharacter));
+            charAlphabet.Add(new Character("b", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Consonants.Where
                 (
@@ -959,43 +950,43 @@ namespace DynamicLanguageLibrary
                     x.PlacesOfArticulation.Contains(PlaceOfArticulation.Alveolar) &&
                     x.Voiced.ToBool() == true
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("d", phonemesForCharacter));
+            charAlphabet.Add(new Character("d", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Vowels.Where
                 (
                     x =>
-                    x.VowelBacknesses.Contains(VowelBackness.Front) &&
-                    x.VowelHeights.Contains(VowelHeight.CloseMid) &&
+                    x.Backnesses.Contains(TongueBackness.Front) &&
+                    x.Heights.Contains(TongueHeight.CloseMid) &&
                     x.Rounded.ToBool() == false
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("e", phonemesForCharacter));
+            charAlphabet.Add(new Character("e", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Vowels.Where
                 (
                     x =>
-                    x.VowelBacknesses.Contains(VowelBackness.Front) &&
-                    x.VowelHeights.Contains(VowelHeight.OpenMid) &&
+                    x.Backnesses.Contains(TongueBackness.Front) &&
+                    x.Heights.Contains(TongueHeight.OpenMid) &&
                     x.Rounded.ToBool() == false
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("ɛ", phonemesForCharacter));
+            charAlphabet.Add(new Character("ɛ", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Vowels.Where
                 (
                     x =>
-                    x.VowelBacknesses.Contains(VowelBackness.Central) &&
-                    x.VowelHeights.Contains(VowelHeight.OpenMid) &&
+                    x.Backnesses.Contains(TongueBackness.Central) &&
+                    x.Heights.Contains(TongueHeight.OpenMid) &&
                     x.Rounded.ToBool() == false
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("ɜ", phonemesForCharacter));
+            charAlphabet.Add(new Character("ɜ", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Vowels.Where
                 (
                     x =>
-                    x.VowelBacknesses.Contains(VowelBackness.Central) &&
-                    x.VowelHeights.Contains(VowelHeight.Mid) &&
+                    x.Backnesses.Contains(TongueBackness.Central) &&
+                    x.Heights.Contains(TongueHeight.Mid) &&
                     x.Rounded.ToBool() == false
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("ə", phonemesForCharacter));
+            charAlphabet.Add(new Character("ə", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Consonants.Where
                 (
@@ -1004,7 +995,7 @@ namespace DynamicLanguageLibrary
                     x.PlacesOfArticulation.Contains(PlaceOfArticulation.Labiodental) &&
                     x.Voiced.ToBool() == false
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("f", phonemesForCharacter));
+            charAlphabet.Add(new Character("f", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Consonants.Where
                 (
@@ -1013,7 +1004,7 @@ namespace DynamicLanguageLibrary
                     x.PlacesOfArticulation.Contains(PlaceOfArticulation.Velar) &&
                     x.Voiced.ToBool() == true
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("g", phonemesForCharacter));
+            charAlphabet.Add(new Character("g", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Consonants.Where
                 (
@@ -1022,25 +1013,25 @@ namespace DynamicLanguageLibrary
                     x.PlacesOfArticulation.Contains(PlaceOfArticulation.Glottal) &&
                     x.Voiced.ToBool() == false
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("h", phonemesForCharacter));
+            charAlphabet.Add(new Character("h", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Vowels.Where
                 (
                     x =>
-                    x.VowelBacknesses.Contains(VowelBackness.Front) &&
-                    x.VowelHeights.Contains(VowelHeight.Close) &&
+                    x.Backnesses.Contains(TongueBackness.Front) &&
+                    x.Heights.Contains(TongueHeight.Close) &&
                     x.Rounded.ToBool() == false
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("i", phonemesForCharacter));
+            charAlphabet.Add(new Character("i", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Vowels.Where
                 (
                     x =>
-                    x.VowelBacknesses.Contains(VowelBackness.NearFront) &&
-                    x.VowelHeights.Contains(VowelHeight.NearClose) &&
+                    x.Backnesses.Contains(TongueBackness.NearFront) &&
+                    x.Heights.Contains(TongueHeight.NearClose) &&
                     x.Rounded.ToBool() == false
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("I", phonemesForCharacter));
+            charAlphabet.Add(new Character("I", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Consonants.Where
                 (
@@ -1049,7 +1040,7 @@ namespace DynamicLanguageLibrary
                     x.PlacesOfArticulation.Contains(PlaceOfArticulation.Palatoalveolar) &&
                     x.Voiced.ToBool() == true
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("j", phonemesForCharacter));
+            charAlphabet.Add(new Character("j", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Consonants.Where
                 (
@@ -1058,7 +1049,7 @@ namespace DynamicLanguageLibrary
                     x.PlacesOfArticulation.Contains(PlaceOfArticulation.Velar) &&
                     x.Voiced.ToBool() == false
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("k", phonemesForCharacter));
+            charAlphabet.Add(new Character("k", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Consonants.Where
                 (
@@ -1067,7 +1058,7 @@ namespace DynamicLanguageLibrary
                     x.PlacesOfArticulation.Contains(PlaceOfArticulation.Alveolar) &&
                     x.Voiced.ToBool() == true
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("l", phonemesForCharacter));
+            charAlphabet.Add(new Character("l", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Consonants.Where
                 (
@@ -1076,7 +1067,7 @@ namespace DynamicLanguageLibrary
                     x.PlacesOfArticulation.Contains(PlaceOfArticulation.Bilabial) &&
                     x.Voiced.ToBool() == true
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("m", phonemesForCharacter));
+            charAlphabet.Add(new Character("m", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Consonants.Where
                 (
@@ -1085,25 +1076,25 @@ namespace DynamicLanguageLibrary
                     x.PlacesOfArticulation.Contains(PlaceOfArticulation.Alveolar) &&
                     x.Voiced.ToBool() == true
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("n", phonemesForCharacter));
+            charAlphabet.Add(new Character("n", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Vowels.Where
                 (
                     x =>
-                    x.VowelBacknesses.Contains(VowelBackness.Back) &&
-                    x.VowelHeights.Contains(VowelHeight.CloseMid) &&
+                    x.Backnesses.Contains(TongueBackness.Back) &&
+                    x.Heights.Contains(TongueHeight.CloseMid) &&
                     x.Rounded.ToBool() == true
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("o", phonemesForCharacter));
+            charAlphabet.Add(new Character("o", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Vowels.Where
                 (
                     x =>
-                    x.VowelBacknesses.Contains(VowelBackness.Back) &&
-                    x.VowelHeights.Contains(VowelHeight.OpenMid) &&
+                    x.Backnesses.Contains(TongueBackness.Back) &&
+                    x.Heights.Contains(TongueHeight.OpenMid) &&
                     x.Rounded.ToBool() == true
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("ɔ", phonemesForCharacter));
+            charAlphabet.Add(new Character("ɔ", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Consonants.Where
                 (
@@ -1112,7 +1103,7 @@ namespace DynamicLanguageLibrary
                     x.PlacesOfArticulation.Contains(PlaceOfArticulation.Bilabial) &&
                     x.Voiced.ToBool() == false
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("p", phonemesForCharacter));
+            charAlphabet.Add(new Character("p", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Consonants.Where
                 (
@@ -1121,7 +1112,7 @@ namespace DynamicLanguageLibrary
                     x.PlacesOfArticulation.Contains(PlaceOfArticulation.Alveolar) &&
                     x.Voiced.ToBool() == true
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("r", phonemesForCharacter));
+            charAlphabet.Add(new Character("r", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Consonants.Where
                 (
@@ -1130,7 +1121,7 @@ namespace DynamicLanguageLibrary
                     x.PlacesOfArticulation.Contains(PlaceOfArticulation.Alveolar) &&
                     x.Voiced.ToBool() == false
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("s", phonemesForCharacter));
+            charAlphabet.Add(new Character("s", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Consonants.Where
                 (
@@ -1139,34 +1130,34 @@ namespace DynamicLanguageLibrary
                     x.PlacesOfArticulation.Contains(PlaceOfArticulation.Alveolar) &&
                     x.Voiced.ToBool() == false
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("t", phonemesForCharacter));
+            charAlphabet.Add(new Character("t", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Vowels.Where
                 (
                     x =>
-                    x.VowelBacknesses.Contains(VowelBackness.Back) &&
-                    x.VowelHeights.Contains(VowelHeight.Close) &&
+                    x.Backnesses.Contains(TongueBackness.Back) &&
+                    x.Heights.Contains(TongueHeight.Close) &&
                     x.Rounded.ToBool() == true
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("u", phonemesForCharacter));
+            charAlphabet.Add(new Character("u", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Vowels.Where
                 (
                     x =>
-                    x.VowelBacknesses.Contains(VowelBackness.Back) &&
-                    x.VowelHeights.Contains(VowelHeight.OpenMid) &&
+                    x.Backnesses.Contains(TongueBackness.Back) &&
+                    x.Heights.Contains(TongueHeight.OpenMid) &&
                     x.Rounded.ToBool() == false
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("ʌ", phonemesForCharacter));
+            charAlphabet.Add(new Character("ʌ", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Vowels.Where
                 (
                     x =>
-                    x.VowelBacknesses.Contains(VowelBackness.NearBack) &&
-                    x.VowelHeights.Contains(VowelHeight.NearClose) &&
+                    x.Backnesses.Contains(TongueBackness.NearBack) &&
+                    x.Heights.Contains(TongueHeight.NearClose) &&
                     x.Rounded.ToBool() == true
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("ʊ", phonemesForCharacter));
+            charAlphabet.Add(new Character("ʊ", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Consonants.Where
                 (
@@ -1175,7 +1166,7 @@ namespace DynamicLanguageLibrary
                     x.PlacesOfArticulation.Contains(PlaceOfArticulation.Labiodental) &&
                     x.Voiced.ToBool() == true
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("v", phonemesForCharacter));
+            charAlphabet.Add(new Character("v", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Consonants.Where
                 (
@@ -1184,7 +1175,7 @@ namespace DynamicLanguageLibrary
                     x.PlacesOfArticulation.Contains(PlaceOfArticulation.Palatal) &&
                     x.Voiced.ToBool() == true
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("y", phonemesForCharacter));
+            charAlphabet.Add(new Character("y", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Consonants.Where
                 (
@@ -1193,7 +1184,7 @@ namespace DynamicLanguageLibrary
                     x.PlacesOfArticulation.Contains(PlaceOfArticulation.Alveolar) &&
                     x.Voiced.ToBool() == true
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("z", phonemesForCharacter));
+            charAlphabet.Add(new Character("z", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Consonants.Where
                 (
@@ -1202,7 +1193,7 @@ namespace DynamicLanguageLibrary
                     x.PlacesOfArticulation.Contains(PlaceOfArticulation.Dental) &&
                     x.Voiced.ToBool() == false
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("θ", phonemesForCharacter));
+            charAlphabet.Add(new Character("θ", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Consonants.Where
                 (
@@ -1211,7 +1202,7 @@ namespace DynamicLanguageLibrary
                     x.PlacesOfArticulation.Contains(PlaceOfArticulation.Dental) &&
                     x.Voiced.ToBool() == true
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("ð", phonemesForCharacter));
+            charAlphabet.Add(new Character("ð", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Consonants.Where
                 (
@@ -1220,7 +1211,7 @@ namespace DynamicLanguageLibrary
                     x.PlacesOfArticulation.Contains(PlaceOfArticulation.Palatoalveolar) &&
                     x.Voiced.ToBool() == false
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("ʃ", phonemesForCharacter));
+            charAlphabet.Add(new Character("ʃ", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Consonants.Where
                 (
@@ -1229,7 +1220,7 @@ namespace DynamicLanguageLibrary
                     x.PlacesOfArticulation.Contains(PlaceOfArticulation.Palatoalveolar) &&
                     x.Voiced.ToBool() == true
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("ʒ", phonemesForCharacter));
+            charAlphabet.Add(new Character("ʒ", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Consonants.Where
                 (
@@ -1238,7 +1229,7 @@ namespace DynamicLanguageLibrary
                     x.PlacesOfArticulation.Contains(PlaceOfArticulation.Palatoalveolar) &&
                     x.Voiced.ToBool() == false
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("t͡ʃ", phonemesForCharacter));
+            charAlphabet.Add(new Character("t͡ʃ", phonemesForCharacter));
 
             phonemesForCharacter = IPA.Consonants.Where
                 (
@@ -1247,7 +1238,7 @@ namespace DynamicLanguageLibrary
                     x.PlacesOfArticulation.Contains(PlaceOfArticulation.Velar) &&
                     x.Voiced.ToBool() == true
                 ).ToList<Phoneme>();
-            charAlphabet.Set.Add(new Character("ŋ", phonemesForCharacter));
+            charAlphabet.Add(new Character("ŋ", phonemesForCharacter));
 
             charAlphabet.Save(filename);
         }

@@ -23,8 +23,8 @@ namespace DynamicLanguageLibrary
     public enum MannerOfArticualtion { Nasal, Stop, SibilantAffricate, NonSibilantAffricate, SibilantFricative, NonSibilantFricative, Approximant, Flap, Trill, LateralAffricative, 
         LateralFricative, LateralApproximate, LateralFlap }
 
-    public enum VowelHeight { Close, NearClose, CloseMid, Mid, OpenMid, NearOpen, Open }
-    public enum VowelBackness { Front, NearFront, Central, NearBack, Back }
+    public enum TongueHeight { Close, NearClose, CloseMid, Mid, OpenMid, NearOpen, Open }
+    public enum TongueBackness { Front, NearFront, Central, NearBack, Back }
 
     #endregion
 
@@ -80,9 +80,9 @@ namespace DynamicLanguageLibrary
         #region Properties
 
         [YAXLib.YAXCollection(YAXLib.YAXCollectionSerializationTypes.Serially, SeparateBy = ", ")]
-        public List<VowelHeight> VowelHeights { get; set; }
+        public List<TongueHeight> Heights { get; set; }
         [YAXLib.YAXCollection(YAXLib.YAXCollectionSerializationTypes.Serially, SeparateBy = ", ")]
-        public List<VowelBackness> VowelBacknesses { get; set; }
+        public List<TongueBackness> Backnesses { get; set; }
 
         [YAXLib.YAXAttributeForClass]
         public AmbiguousBool Rounded { get; set; }
@@ -96,13 +96,13 @@ namespace DynamicLanguageLibrary
         }
 
         public VowelPhoneme(string representation, string pronounciation, AmbiguousBool rounded,
-            List<VowelHeight> vowelHeights, List<VowelBackness> vowelBacknesses)
+            List<TongueHeight> vowelHeights, List<TongueBackness> vowelBacknesses)
         {
             this.Representation = representation;
             this.Pronounciation = pronounciation;
             this.Rounded = rounded;
-            this.VowelHeights = vowelHeights;
-            this.VowelBacknesses = vowelBacknesses;
+            this.Heights = vowelHeights;
+            this.Backnesses = vowelBacknesses;
         }
 
         #endregion

@@ -4,30 +4,41 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using YAXLib;
 
 namespace DynamicLanguageLibrary
 {
-    public class CharacterAlphabet
+    internal class CharacterAlphabetParser
     {
-        [YAXLib.YAXAttributeForClass]
+        [YAXAttributeForClass]
         public string Name { get; set; }
+        public List<Character> Set { get; set; }
 
-        public ObservableCollection<Character> Set { get; private set; }
+        public CharacterAlphabetParser() { }
+    }
+
+    public class CharacterAlphabet : ObservableCollection<Character>
+    {
+        public string Name { get; set; }
 
         public CharacterAlphabet(string filename = null)
         {
-            Set = new ObservableCollection<Character>();
-
             if (filename != null)
                 Load(filename);
         }
 
         public void Save(string filename)
         {
-            YAXLib.YAXSerializer serializer = new YAXLib.YAXSerializer(typeof(CharacterAlphabet));
             try
             {
-                serializer.SerializeToFile(this, filename);
+                CharacterAlphabetParser cap = new CharacterAlphabetParser()
+                {
+                    Name = this.Name,
+                    Set = new List<Character>(this)
+                };
+
+                YAXSerializer serializer = new YAXSerializer(typeof(CharacterAlphabetParser));
+                serializer.SerializeToFile(cap, filename);
             }
             catch (Exception e)
             {
@@ -37,15 +48,14 @@ namespace DynamicLanguageLibrary
 
         public void Load(string filename)
         {
-            YAXLib.YAXSerializer serializer = new YAXLib.YAXSerializer(typeof(CharacterAlphabet));
+            YAXSerializer serializer = new YAXSerializer(typeof(CharacterAlphabetParser));
             try
             {
-                CharacterAlphabet ca = serializer.DeserializeFromFile(filename) as CharacterAlphabet;
-                this.Name = ca.Name;
-                foreach (Character c in ca.Set)
-                {
-                    this.Set.Add(c);
-                }
+                CharacterAlphabetParser cap = serializer.DeserializeFromFile(filename) as CharacterAlphabetParser;
+                this.Name = cap.Name;
+
+                this.ClearItems();
+                this.Concat(cap.Set);
             }
             catch (Exception e)
             {

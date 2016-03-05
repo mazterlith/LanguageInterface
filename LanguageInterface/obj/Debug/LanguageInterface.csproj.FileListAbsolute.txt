@@ -18,3 +18,6 @@ C:\Users\Ben\Documents\Visual Studio 2012\Projects\LanguageInterface\LanguageInt
 C:\Users\Ben\Documents\Visual Studio 2012\Projects\LanguageInterface\LanguageInterface\bin\Debug\YAXLib.xml
 C:\Users\Ben\Documents\Visual Studio 2012\Projects\LanguageInterface\LanguageInterface\bin\Debug\MorphemeSets\EnglishMorphemes.txt
 C:\Users\Ben\Documents\Visual Studio 2012\Projects\LanguageInterface\LanguageInterface\bin\Debug\PhonemeAlphabets\InternationalPhoneticAlphabet.xml
+C:\Users\Ben\Documents\Visual Studio 2012\Projects\LanguageInterface\LanguageInterface\bin\Debug\CharacterAlphabets\EnglishCharacters.xml
+C:\Users\Ben\documents\visual studio 2012\Projects\LanguageInterface\LanguageInterface\bin\Debug\LanguageMathLibrary.dll
+C:\Users\Ben\documents\visual studio 2012\Projects\LanguageInterface\LanguageInterface\bin\Debug\LanguageMathLibrary.pdb
